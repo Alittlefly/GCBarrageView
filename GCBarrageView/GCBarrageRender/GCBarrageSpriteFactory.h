@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @class GCBarrageSprite;
-@class GCBarrageDispatcher;
+@class GCBarrageDescriptor;
 
 @interface GCBarrageSpriteFactory : NSObject
 
 /// 通过描述符创建精灵
-+ (GCBarrageSprite *)createSpriteWithDescriptor:(GCBarrageDispatcher *)descriptor;
++ (GCBarrageSprite *)createSpriteWithDescriptor:(GCBarrageDescriptor *)descriptor;
 
 @end

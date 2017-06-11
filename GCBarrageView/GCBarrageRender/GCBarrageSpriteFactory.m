@@ -8,20 +8,20 @@
 
 #import "GCBarrageSpriteFactory.h"
 #import "GCBarrageSprite.h"
-#import "GCBarrageDispatcher.h"
+#import "GCBarrageDescriptor.h"
 
 @implementation GCBarrageSpriteFactory
 
-+ (GCBarrageSprite *)createSpriteWithDescriptor:(GCBarrageDispatcher *)descriptor
++ (GCBarrageSprite *)createSpriteWithDescriptor:(GCBarrageDescriptor *)descriptor
 {
     GCBarrageSprite * sprite = nil;
     
-//    if (descriptor.spriteName.length != 0) {
-//        Class class = NSClassFromString(descriptor.spriteName);
-//        if (class) {
-//            sprite = [[class alloc]init];
-//        }
-//    }
+    if (descriptor.spriteName.length != 0) {
+        Class class = NSClassFromString(descriptor.spriteName);
+        if (class) {
+            sprite = [[class alloc]init];
+        }
+    }
     if (sprite) {
 //        sprite.model = 
     }
