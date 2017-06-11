@@ -57,6 +57,6 @@ typedef void(^GCBarrageClickAction)(void);
 @protocol GCBarrageImageProtocol <GCBarrageViewProtocol>
 
 @property(nonatomic,strong) UIImage *image;
-@property(nonatomic,strong) NSURL *imgURL;
+@property(nonatomic,strong) NSString *imgURLStr;
 
 @end
