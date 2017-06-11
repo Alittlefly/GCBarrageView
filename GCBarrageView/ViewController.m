@@ -23,11 +23,11 @@
     UIView *barrage = [UIView new];
     [barrage setBackgroundColor:[UIColor yellowColor]];
     
-    GCBarrageView *view = [[GCBarrageView alloc] initWithView:nil];
-    [view setFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 300)];
-    [view setDelegate:self];
-    _barrage = view;
-    [self.view addSubview:view];
+//    GCBarrageView *view = [[GCBarrageView alloc] initWithView:nil];
+//    [view setFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 300)];
+//    [view setDelegate:self];
+//    _barrage = view;
+//    [self.view addSubview:view];
     
     UIButton *startButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 50, 450, 100, 100)];
     [startButton setBackgroundColor:[UIColor redColor]];
@@ -36,9 +36,9 @@
 }
 
 -(void)startPlay{
-    [_barrage barrageStart];
-    
-    [self performSelector:@selector(addNewBarrage) withObject:nil afterDelay:2.0];
+//    [_barrage barrageStart];
+//    
+//    [self performSelector:@selector(addNewBarrage) withObject:nil afterDelay:2.0];
 }
 -(void)addNewBarrage{
     [_barrage insertData:[self randomText]];

@@ -32,9 +32,7 @@
 }
 
 -(void)initClock{
-    if (!_clock) {
-         _clock = [CADisplayLink displayLinkWithTarget:self selector:@selector(runClock:)];
-    }
+     _clock = [CADisplayLink displayLinkWithTarget:self selector:@selector(runClock:)];
 }
 -(void)runClock:(CADisplayLink  *)clock{
     [self updateTime];
