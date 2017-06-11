@@ -1,13 +1,13 @@
 //
-//  GCBarrageUint.m
+//  GCBarrageUint.h
 //  GCBarrageView
 //
 //  Created by Charles on 2017/6/11.
 //  Copyright © 2017年 Fission. All rights reserved.
 //
 
-#import "GCBarrageUint.h"
+#import <Foundation/Foundation.h>
 
-@implementation GCBarrageUint
+@interface GCBarrageSprite : NSObject
 
 @end

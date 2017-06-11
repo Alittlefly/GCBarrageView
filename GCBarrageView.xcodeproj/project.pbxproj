@@ -24,7 +24,7 @@
 		565138EF1EED447300506533 /* GCBarrageRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 565138EE1EED447300506533 /* GCBarrageRender.m */; };
 		565138F21EED44B300506533 /* GCBarrageClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 565138F11EED44B300506533 /* GCBarrageClock.m */; };
 		565138F51EED44D100506533 /* GCBarrageDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 565138F41EED44D100506533 /* GCBarrageDispatcher.m */; };
-		565138F81EED44EC00506533 /* GCBarrageUint.m in Sources */ = {isa = PBXBuildFile; fileRef = 565138F71EED44EC00506533 /* GCBarrageUint.m */; };
+		565138F81EED44EC00506533 /* GCBarrageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 565138F71EED44EC00506533 /* GCBarrageSprite.m */; };
 		565138FC1EED455A00506533 /* GCBarrageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 565138FB1EED455A00506533 /* GCBarrageLoader.m */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		562C36B41EC6D7F0002821FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562C36C11EC6D82E002821FE /* GCBarrageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBarrageView.h; sourceTree = "<group>"; };
 		562C36C21EC6D82E002821FE /* GCBarrageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBarrageView.m; sourceTree = "<group>"; };
-		562C36C71EC6E13C002821FE /* GCBarrageConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCBarrageConsts.h; path = GCBarrage/GCBarrageConsts.h; sourceTree = "<group>"; };
+		562C36C71EC6E13C002821FE /* GCBarrageConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBarrageConsts.h; sourceTree = "<group>"; };
 		562C36C81EC70521002821FE /* GCBarrageUint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBarrageUint.h; sourceTree = "<group>"; };
 		562C36C91EC70521002821FE /* GCBarrageUint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBarrageUint.m; sourceTree = "<group>"; };
 		562C36CB1EC70721002821FE /* CGBarrageUintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGBarrageUintMaker.h; sourceTree = "<group>"; };
@@ -81,8 +81,8 @@
 		565138F11EED44B300506533 /* GCBarrageClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBarrageClock.m; sourceTree = "<group>"; };
 		565138F31EED44D100506533 /* GCBarrageDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBarrageDispatcher.h; sourceTree = "<group>"; };
 		565138F41EED44D100506533 /* GCBarrageDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBarrageDispatcher.m; sourceTree = "<group>"; };
-		565138F61EED44EC00506533 /* GCBarrageUint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBarrageUint.h; sourceTree = "<group>"; };
-		565138F71EED44EC00506533 /* GCBarrageUint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBarrageUint.m; sourceTree = "<group>"; };
+		565138F61EED44EC00506533 /* GCBarrageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBarrageSprite.h; sourceTree = "<group>"; };
+		565138F71EED44EC00506533 /* GCBarrageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBarrageSprite.m; sourceTree = "<group>"; };
 		565138F91EED452D00506533 /* GCBarrageUnitProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCBarrageUnitProtocol.h; sourceTree = "<group>"; };
 		565138FA1EED455A00506533 /* GCBarrageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBarrageLoader.h; sourceTree = "<group>"; };
 		565138FB1EED455A00506533 /* GCBarrageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBarrageLoader.m; sourceTree = "<group>"; };
@@ -136,7 +136,6 @@
 		562C368C1EC6D7F0002821FE /* GCBarrageView */ = {
 			isa = PBXGroup;
 			children = (
-				562C36C71EC6E13C002821FE /* GCBarrageConsts.h */,
 				565138EC1EED445C00506533 /* GCBarrageRender */,
 				562C36C01EC6D812002821FE /* GCBarrage */,
 				562C36901EC6D7F0002821FE /* AppDelegate.h */,
@@ -181,6 +180,7 @@
 		562C36C01EC6D812002821FE /* GCBarrage */ = {
 			isa = PBXGroup;
 			children = (
+				562C36C71EC6E13C002821FE /* GCBarrageConsts.h */,
 				562C36C11EC6D82E002821FE /* GCBarrageView.h */,
 				562C36C21EC6D82E002821FE /* GCBarrageView.m */,
 				562C36C81EC70521002821FE /* GCBarrageUint.h */,
@@ -207,8 +207,8 @@
 				565138F11EED44B300506533 /* GCBarrageClock.m */,
 				565138F31EED44D100506533 /* GCBarrageDispatcher.h */,
 				565138F41EED44D100506533 /* GCBarrageDispatcher.m */,
-				565138F61EED44EC00506533 /* GCBarrageUint.h */,
-				565138F71EED44EC00506533 /* GCBarrageUint.m */,
+				565138F61EED44EC00506533 /* GCBarrageSprite.h */,
+				565138F71EED44EC00506533 /* GCBarrageSprite.m */,
 				565138FA1EED455A00506533 /* GCBarrageLoader.h */,
 				565138FB1EED455A00506533 /* GCBarrageLoader.m */,
 			);
@@ -355,7 +355,7 @@
 				562C36951EC6D7F0002821FE /* ViewController.m in Sources */,
 				562C36CD1EC70721002821FE /* CGBarrageUintMaker.m in Sources */,
 				565138FC1EED455A00506533 /* GCBarrageLoader.m in Sources */,
-				565138F81EED44EC00506533 /* GCBarrageUint.m in Sources */,
+				565138F81EED44EC00506533 /* GCBarrageSprite.m in Sources */,
 				562C36921EC6D7F0002821FE /* AppDelegate.m in Sources */,
 				562C368F1EC6D7F0002821FE /* main.m in Sources */,
 				565138F51EED44D100506533 /* GCBarrageDispatcher.m in Sources */,
