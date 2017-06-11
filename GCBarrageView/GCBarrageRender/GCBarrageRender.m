@@ -8,10 +8,17 @@
 
 #import "GCBarrageRender.h"
 #import "GCBarrageClock.h"
+#import "GCBarrageCanvas.h"
+#import "GCBarrageDispatcher.h"
+
 @interface GCBarrageRender()<GCBarrageClockDelegate>
 {
-    // 
+    // 时钟
     GCBarrageClock *_clock;
+    // 画布
+    GCBarrageCanvas *_canvas;
+    // 调度器
+    GCBarrageDispatcher *_dispatcher;
 }
 
 @property(nonatomic,assign)NSTimeInterval time;
@@ -21,6 +28,8 @@
 
 -(instancetype)init{
     if (self = [super init]) {
+        _canvas = [GCBarrageCanvas new];
+        
         [self initClock];
     }
     return self;
@@ -35,7 +44,8 @@
     [_clock setTimeSpeed:MAX(speed, 0)];
 }
 -(void)renderStart{
-    
+    [_canvas layoutSubviews];
+
     [_clock start];
 }
 
@@ -64,5 +74,20 @@
 -(void)updateCanvas{
     // 更新画布
 }
+#pragma mark - attributes
 
+- (UIView *)view
+{
+    return _canvas;
+}
+
+- (void)setCanvasMargin:(UIEdgeInsets)canvasMargin
+{
+    _canvas.margin = canvasMargin;
+}
+
+- (void)setMasked:(BOOL)masked
+{
+    _canvas.masked = masked;
+}
 @end
