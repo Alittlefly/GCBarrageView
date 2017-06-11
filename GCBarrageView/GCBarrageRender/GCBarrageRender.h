@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface GCBarrageRender : NSObject
+
+@property(nonatomic,assign)CGFloat speed;
+
+-(void)renderStart;
+
+-(void)renderStop;
+
+-(void)renderPause;
+
+-(void)renderResume;
 
 @end
