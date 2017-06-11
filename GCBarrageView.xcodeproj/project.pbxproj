@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099137401EED54B80071F9D3 /* GCBarrageCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 0991373F1EED54B80071F9D3 /* GCBarrageCanvas.m */; };
 		562C368F1EC6D7F0002821FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 562C368E1EC6D7F0002821FE /* main.m */; };
 		562C36921EC6D7F0002821FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 562C36911EC6D7F0002821FE /* AppDelegate.m */; };
 		562C36951EC6D7F0002821FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562C36941EC6D7F0002821FE /* ViewController.m */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0991373E1EED54B80071F9D3 /* GCBarrageCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBarrageCanvas.h; sourceTree = "<group>"; };
+		0991373F1EED54B80071F9D3 /* GCBarrageCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBarrageCanvas.m; sourceTree = "<group>"; };
 		562C368A1EC6D7F0002821FE /* GCBarrageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCBarrageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		562C368E1EC6D7F0002821FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		562C36901EC6D7F0002821FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				565138F91EED452D00506533 /* GCBarrageUnitProtocol.h */,
+				0991373E1EED54B80071F9D3 /* GCBarrageCanvas.h */,
+				0991373F1EED54B80071F9D3 /* GCBarrageCanvas.m */,
 				565138ED1EED447300506533 /* GCBarrageRender.h */,
 				565138EE1EED447300506533 /* GCBarrageRender.m */,
 				565138F01EED44B300506533 /* GCBarrageClock.h */,
@@ -361,6 +366,7 @@
 				565138F51EED44D100506533 /* GCBarrageDispatcher.m in Sources */,
 				562C36D01EC81E17002821FE /* GCAnimationMaker.m in Sources */,
 				562C36CA1EC70521002821FE /* GCBarrageUint.m in Sources */,
+				099137401EED54B80071F9D3 /* GCBarrageCanvas.m in Sources */,
 				562C36C31EC6D82E002821FE /* GCBarrageView.m in Sources */,
 				562C36D31EC81ECA002821FE /* GCLocationMaker.m in Sources */,
 				565138EF1EED447300506533 /* GCBarrageRender.m in Sources */,
