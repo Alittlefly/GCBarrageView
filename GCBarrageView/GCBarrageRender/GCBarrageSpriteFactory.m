@@ -23,7 +23,7 @@
         }
     }
     if (sprite) {
-//        sprite.model = 
+        sprite.bindObject = descriptor.bindObject;
     }
     return sprite;
 }

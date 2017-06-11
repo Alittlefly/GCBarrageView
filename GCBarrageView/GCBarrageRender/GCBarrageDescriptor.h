@@ -12,5 +12,7 @@
 
 /// 类名,支持的类名参照BarrageSprite子类
 @property(nonatomic,strong)NSString * spriteName;
+//  和生产说明书绑定的object
+@property(nonatomic,strong)id bindObject;
 
 @end

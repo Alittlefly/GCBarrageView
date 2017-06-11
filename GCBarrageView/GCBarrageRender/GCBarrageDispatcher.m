@@ -29,7 +29,6 @@
         _activeSprites = [[NSMutableArray alloc]init];
         _waitingSprites = [[NSMutableArray alloc]init];
         _deadSprites = [[NSMutableArray alloc]init];
-//        _cacheDeadSprites = NO;
         _previousTime = 0.0f;
     }
     return self;
@@ -51,10 +50,10 @@
 {
     for (NSInteger i = 0; i < _activeSprites.count; i ++) {
         GCBarrageSprite * sprite = [_activeSprites objectAtIndex:i];
-//        if (!sprite.isValid) {
+        if (sprite.vaild) {
             [self deactiveSprite:sprite];
             [_activeSprites removeObjectAtIndex:i--];
-//        }
+        }
     }
     static NSTimeInterval const MAX_EXPIRED_SPRITE_RESERVED_TIME = 0.5f; // 弹幕最大保留时间
     NSTimeInterval currentTime = [self currentTime];

@@ -10,4 +10,8 @@
 
 @implementation GCBarrageSprite
 
+-(void)setBindObject:(id)bindObject{
+    //
+}
+
 @end
